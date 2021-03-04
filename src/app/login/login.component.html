@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="col"></div>
+            <div class="col" > WELCOME TO YES BANK</div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    
+        <div class="jumpotron">
+            <div class="row">
+            
+                
+                    <div class="form-group">
+                    <label for="accno">Account Number</label>
+                    <input (change)="accnoChange($event)" type="text" class="form-control" id="accno">
+                
+                
+                <div class="form-group">
+                    <label for="pswd">Password</label>
+                    <input (change)="pswdChange($event)" type="password" class="form-control" id="pswd">
+                </div>
+
+                <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+            </div>
+        </div>
+        
+    
+    
+    </div>
