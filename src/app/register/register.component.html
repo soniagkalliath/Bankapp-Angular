@@ -1,0 +1,55 @@
+<form action="" (ngSubmit)="register()">
+    
+    <div class="container">     
+              
+        <div class="jumbotron">
+            <h1> Registration Form</h1>
+    
+   
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+            
+                
+                    
+                        <label for="uname">User Name</label>
+                        <input [(ngModel)]="uname" name="uname" type="text" class="form-control" id="uname">
+                   
+                </div>
+            <div class="row">
+            
+                
+                    
+                    <label for="accno">Account Number</label>
+                    <input  [(ngModel)]="accno" name="accno" type="text" class="form-control" id="accno">
+               
+            </div>
+            <div class="row">
+                
+                <label for="pin">PIN</label>
+                <input  [(ngModel)]="pin" name="pin" type="password" class="form-control" id="pin">
+           
+            </div>
+            <div class="row">
+                
+                    <label for="pswd">Password</label>
+                    <input  [(ngModel)]="pswd" name="pswd" type="password" class="form-control" id="pswd">
+               
+                </div>
+                
+                <br>
+<div>
+                <button type="submit" class="btn btn-primary" >Register</button>
+                <a routerLink="">Back to Login</a></div>
+           
+       </div>
+       </div>
+
+        </div>
+        </div>
+    
+    
+  
+
+</form>
+

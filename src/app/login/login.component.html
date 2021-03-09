@@ -1,32 +1,36 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="col"></div>
-            <div class="col" > WELCOME TO YES BANK</div>
-            <div class="col"></div>
-        </div>
-    </div>
-
-
-    
-        <div class="jumpotron">
+<form action="">
+    <h1> Welcome to YES Bank</h1>
+    <div class="container">     
+              
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col">
             <div class="row">
             
                 
-                    <div class="form-group">
+                    
                     <label for="accno">Account Number</label>
-                    <input (change)="accnoChange($event)" type="text" class="form-control" id="accno">
-                
-                
-                <div class="form-group">
-                    <label for="pswd">Password</label>
-                    <input (change)="pswdChange($event)" type="password" class="form-control" id="pswd">
-                </div>
-
-                <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                    <input [(ngModel)]="accno" name="accno" type="text" class="form-control" id="accno">
+               
             </div>
+            <div class="row">
+                
+                    <label for="pwd">Password</label>
+                    <input [(ngModel)]="pwd" name="pwd" type="password" class="form-control" id="pwd">
+               
+                </div>
+                <br>
+<div>
+                <button type="submit" class="btn btn-primary" (click)="login()">Login</button>
+                <a routerLink="register">Registration</a></div>
+           
+       </div>
+       </div>
+
         </div>
-        
+        </div>
     
     
-    </div>
+  
+
+</form>
